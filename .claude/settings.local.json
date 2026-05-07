@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vite *)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('arrowup'\\) || k.toLowerCase\\(\\).includes\\('moveup'\\)\\).join\\(', '\\)\\)\")"
+    ]
+  }
+}
