@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
+import { CampaignProvider } from './context/CampaignContext'
 import ProgressBar from './components/ProgressBar'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -28,7 +29,7 @@ export default function App() {
   }, [])
 
   return (
-    <>
+    <CampaignProvider>
       <ProgressBar />
       <Navbar />
       <main>
@@ -47,6 +48,6 @@ export default function App() {
       <Footer />
       <WhatsAppFloat />
       <BackToTop />
-    </>
+    </CampaignProvider>
   )
 }

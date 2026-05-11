@@ -70,7 +70,7 @@ export default function ConsignadoSection() {
             </ul>
 
             <a href="#simulacao" className="consig-cta-btn">
-              Quero saber mais
+              Simular agora
             </a>
           </div>
 

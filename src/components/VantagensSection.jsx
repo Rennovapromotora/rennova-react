@@ -1,8 +1,10 @@
 import { useRef } from 'react'
+import { waLink, WA_MESSAGES } from '../config/whatsapp'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { BadgeCheck, Zap, Wallet } from 'lucide-react'
+import SimularAgoraButton from './SimularAgoraButton'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -70,9 +72,11 @@ export default function VantagensSection() {
               Saiba qual tipo de empréstimo é ideal para o seu momento atual.
               Contrate de forma 100% online.
             </p>
-            <a href="#contato" className="vantagens-cta">
-              Quero saber mais
-            </a>
+            <SimularAgoraButton
+              href={waLink(WA_MESSAGES.simularAgora)}
+              className="vantagens-cta"
+              text="Simular agora"
+            />
           </div>
 
           <div className="vantagens-right">

@@ -1,8 +1,10 @@
 import { useRef, useEffect } from 'react'
+import { waLink, WA_MESSAGES } from '../config/whatsapp'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Star } from 'lucide-react'
+import SimularAgoraButton from './SimularAgoraButton'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -180,6 +182,9 @@ export default function Testimonials() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="testimonials-cta">
+        <SimularAgoraButton href={waLink(WA_MESSAGES.simularAgora)} />
       </div>
     </section>
   )

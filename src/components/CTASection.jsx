@@ -1,5 +1,6 @@
 import { useRef } from 'react'
-import { waLink, WA_MESSAGES } from '../config/whatsapp'
+import { WA_MESSAGES } from '../config/whatsapp'
+import { useCampaignContext } from '../context/CampaignContext'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -13,6 +14,7 @@ const WA_PATH_2 = 'M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.122 1.524 5.854L.057
 
 export default function CTASection() {
   const ref = useRef(null)
+  const { getCampaignWaLink } = useCampaignContext()
 
   useGSAP(() => {
     gsap.from(['.cta-tag', '.cta-title', '.cta-desc', '.cta-actions'], {
@@ -39,7 +41,7 @@ export default function CTASection() {
           Descubra como é fácil obter crédito com a Rennova. Sem burocracia, totalmente digital e com as melhores condições do mercado.
         </p>
         <div className="cta-actions">
-          <a href={waLink(WA_MESSAGES.simularWhatsApp)} className="btn-ghost" target="_blank" rel="noreferrer">
+          <a href={getCampaignWaLink(WA_MESSAGES.simularWhatsApp)} className="btn-ghost" target="_blank" rel="noreferrer">
             Simular pelo WhatsApp
             <svg viewBox="0 0 24 24" width={26} height={26} fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
               <path d="M12 .5a11.5 11.5 0 0 0-9.54 17.92L.5 23.5l5.23-1.87A11.5 11.5 0 1 0 12 .5Z" />

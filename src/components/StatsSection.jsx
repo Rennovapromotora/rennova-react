@@ -1,7 +1,9 @@
 import { useRef } from "react";
+import { waLink, WA_MESSAGES } from "../config/whatsapp";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SimularAgoraButton from "./SimularAgoraButton";
 import {
   ShieldCheck,
   Banknote,
@@ -112,6 +114,9 @@ export default function StatsSection() {
             <p className="trust-subheading">
               Desenvolvemos o melhor crédito para atender as necessidades financeiras dos trabalhadores com carteira assinada de todo o Brasil, com condições especiais e aprovação facilitada.
             </p>
+            <div className="trust-cta-wrap">
+              <SimularAgoraButton href={waLink(WA_MESSAGES.simularAgora)} />
+            </div>
             <ul className="trust-list">
               {items.map((item, i) => {
                 const Icon = item.icon;
@@ -174,6 +179,9 @@ export default function StatsSection() {
               </div>
             );
           })}
+        </div>
+        <div className="trust-stats-cta">
+          <SimularAgoraButton href={waLink(WA_MESSAGES.simularAgora)} />
         </div>
       </div>
     </section>

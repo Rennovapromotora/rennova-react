@@ -1,15 +1,16 @@
 import { useRef, useState, useEffect } from "react";
 import { waLink, WA_MESSAGES } from "../config/whatsapp";
+import { useCampaignContext } from "../context/CampaignContext";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import {
   Zap,
-  Phone,
   ShieldCheck,
   TrendingUp,
   ChevronDown,
 } from "lucide-react";
+import SimularAgoraButton from "./SimularAgoraButton";
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -28,6 +29,7 @@ export default function Hero() {
   const [visible, setVisible] = useState(true);
   const [simValue, setSimValue] = useState("");
   const [simError, setSimError] = useState(false);
+  const { campaign } = useCampaignContext();
 
   const formatBRL = (raw) => {
     const digits = raw.replace(/\D/g, "");
@@ -52,7 +54,8 @@ export default function Hero() {
       style: "currency",
       currency: "BRL",
     });
-    window.open(waLink(WA_MESSAGES.simulador(valor)), "_blank");
+    const prefix = campaign ? `(${campaign}) ` : '';
+    window.open(waLink(`${prefix}${WA_MESSAGES.simulador(valor)}`), "_blank");
   };
 
   useEffect(() => {
@@ -154,18 +157,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a
-              href={waLink(WA_MESSAGES.simularAgora)}
-              className="btn-primary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Simular Agora
-              <svg viewBox="0 0 24 24" width={26} height={26} fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                <path d={WA_STROKE_1} />
-                <path d={WA_STROKE_2} />
-              </svg>
-            </a>
+            <SimularAgoraButton href={waLink(WA_MESSAGES.simularAgora)} />
           </div>
         </div>
 

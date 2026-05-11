@@ -3,7 +3,8 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 import LogoMark from './LogoMark'
-import { waLink, WA_MESSAGES } from '../config/whatsapp'
+import { WA_MESSAGES } from '../config/whatsapp'
+import { useCampaignContext } from '../context/CampaignContext'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -20,6 +21,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const { getCampaignWaLink } = useCampaignContext()
 
   useEffect(() => {
     const trigger = ScrollTrigger.create({
@@ -59,7 +61,7 @@ export default function Navbar() {
 
           <div className="nav-actions">
             <a
-              href={waLink(WA_MESSAGES.simularNavbar)}
+              href={getCampaignWaLink(WA_MESSAGES.simularNavbar)}
               className="nav-cta"
               target="_blank"
               rel="noreferrer"

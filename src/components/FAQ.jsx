@@ -1,8 +1,10 @@
 import { useState, useRef } from 'react'
+import { waLink, WA_MESSAGES } from '../config/whatsapp'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { ChevronDown } from 'lucide-react'
+import SimularAgoraButton from './SimularAgoraButton'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -78,6 +80,9 @@ export default function FAQ() {
           <p className="section-desc" style={{ textAlign: 'center', margin: '14px auto 0' }}>
             Ainda tem dúvidas? Nossa equipe está disponível no WhatsApp.
           </p>
+          <div className="faq-cta">
+            <SimularAgoraButton href={waLink(WA_MESSAGES.simularAgora)} />
+          </div>
         </div>
 
         <div className="faq-wrap">
