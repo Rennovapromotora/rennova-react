@@ -40,3 +40,9 @@ export function waLinkForCampaign(campaign, fallbackMessage = WA_MESSAGES.simula
   const message = CAMPAIGN_MESSAGES[campaign?.toUpperCase()] || fallbackMessage
   return waLink(message)
 }
+
+// Mensagem do simulador com valor — inclui prefixo de campanha quando houver
+export function simuladorMessage(campaign, valor) {
+  const prefix = campaign ? `(${campaign}) ` : ''
+  return `${prefix}Olá! Tenho interesse em simular um crédito no valor de ${valor}. Pode me ajudar?`
+}

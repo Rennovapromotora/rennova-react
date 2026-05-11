@@ -2812,11 +2812,56 @@ section {
   }
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 32px;
     padding: calc(var(--nav-h) + 48px) 32px 72px;
   }
   .hero-visual {
+    opacity: 1 !important;
+    transform: none !important;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  /* Esconde elementos decorativos — mantém só o card do simulador */
+  .hv-orb,
+  .hv-grid,
+  .hv-chip,
+  .hero-svg-notif,
+  .hero-svg-badge {
     display: none;
+  }
+  .hv-scene {
+    min-height: auto;
+    background: rgba(6, 15, 26, 0.45);
+    padding: 20px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
+  .hv-card {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+  }
+  .hv-sim-field {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+  }
+  .hv-sim-input {
+    font-size: 1.2rem;
+    min-width: 0;
+    width: 0;
+  }
+  .hv-sim-prefix {
+    font-size: 1.1rem;
+  }
+  .hv-sim-title {
+    font-size: 1rem;
+  }
+  .hero-phrase-ghost {
+    white-space: normal;
   }
   .hero-bg {
     background:
@@ -2854,6 +2899,7 @@ section {
     font-size: 0.82rem;
   }
   .hero-inner {
+    gap: 24px;
     padding: calc(var(--nav-h) + 28px) 20px 56px;
   }
   /* center "Ver mais" inside the arch opening (dip peak ~66px from hero bottom) */

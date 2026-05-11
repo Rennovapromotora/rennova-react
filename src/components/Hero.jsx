@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { waLink, WA_MESSAGES } from "../config/whatsapp";
+import { waLink, WA_MESSAGES, simuladorMessage } from "../config/whatsapp";
 import { useCampaignContext } from "../context/CampaignContext";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -54,8 +54,7 @@ export default function Hero() {
       style: "currency",
       currency: "BRL",
     });
-    const prefix = campaign ? `(${campaign}) ` : '';
-    window.open(waLink(`${prefix}${WA_MESSAGES.simulador(valor)}`), "_blank");
+    window.open(waLink(simuladorMessage(campaign, valor)), "_blank");
   };
 
   useEffect(() => {
