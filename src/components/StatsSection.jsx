@@ -106,9 +106,12 @@ export default function StatsSection() {
         <div className="trust-layout">
           <div className="trust-content">
             <h2 className="trust-heading">
-              O consignado feito sob medida para você,{" "}
+              O crédito feito sob medida para você,{" "}
               <span className="trust-highlight">trabalhador CLT</span>
             </h2>
+            <p className="trust-subheading">
+              Desenvolvemos o melhor crédito para atender as necessidades financeiras dos trabalhadores com carteira assinada de todo o Brasil, com condições especiais e aprovação facilitada.
+            </p>
             <ul className="trust-list">
               {items.map((item, i) => {
                 const Icon = item.icon;

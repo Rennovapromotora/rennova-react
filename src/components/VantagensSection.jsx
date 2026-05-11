@@ -10,7 +10,7 @@ const cards = [
   {
     icon: BadgeCheck,
     title: 'Crédito Pré Aprovado',
-    desc: 'Basta ter o vínculo empregatício CLT ativo na sua empresa atual há mais de 6 meses.',
+    desc: 'Basta ter o vínculo empregatício CLT ativo na sua empresa atual há mais de 3 meses.',
   },
   {
     icon: Zap,
@@ -63,7 +63,7 @@ export default function VantagensSection() {
             <span className="vantagens-eyebrow">Consignado na sua conta de forma rápida e fácil</span>
             <h2 className="vantagens-heading">
               Vantagens de contratar o{' '}
-              <strong>Consignado Privado</strong> com a{' '}
+              <strong>Empréstimo</strong> com a{' '}
               <strong>Rennova promotora</strong>
             </h2>
             <p className="vantagens-sub">

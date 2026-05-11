@@ -8,14 +8,14 @@ gsap.registerPlugin(ScrollTrigger)
 
 const faqs = [
   {
-    q: 'Quem pode contratar o Consignado Privado?',
-    a: 'Podem contratar trabalhadores com carteira assinada (CLT) de empresas privadas e empresas conveniadas com a nossa plataforma. O empréstimo consignado é ideal para quem busca taxas mais baixas e prazos mais longos para pagamento.',
+    q: 'Quem pode contratar o Crédito?',
+    a: 'Podem contratar trabalhadores com carteira assinada (CLT) de empresas privadas e empresas conveniadas com a nossa plataforma. O empréstimo é ideal para quem busca taxas mais baixas e prazos mais longos para pagamento.',
   },
   {
     q: 'Quais documentos são necessários para contratar?',
     a: (
       <>
-        Para contratar o Consignado Privado, você precisará dos seguintes documentos:
+        Para contratar o Crédito Privado, você precisará dos seguintes documentos:
         <ul style={{ marginTop: 10, paddingLeft: 18, display: 'flex', flexDirection: 'column', gap: 6 }}>
           <li>RG e CPF ou CNH válida</li>
           <li>Comprovante de residência atualizado (até 90 dias)</li>
@@ -50,11 +50,11 @@ const faqs = [
   },
   {
     q: 'Posso quitar meu empréstimo antes do prazo?',
-    a: 'Sim, você pode quitar seu empréstimo consignado antecipadamente e ter desconto nos juros proporcionais ao tempo restante. Para isso, basta entrar em contato com nossa central de atendimento e solicitar a antecipação da quitação. Você receberá um boleto com o valor atualizado e os descontos aplicáveis.',
+    a: 'Sim, você pode quitar seu empréstimo antecipadamente e ter desconto nos juros proporcionais ao tempo restante. Para isso, basta entrar em contato com nossa central de atendimento e solicitar a antecipação da quitação. Você receberá um boleto com o valor atualizado e os descontos aplicáveis.',
   },
   {
     q: 'Qual o valor máximo que posso solicitar?',
-    a: 'O valor máximo que você pode solicitar depende da sua margem consignável, que é calculada com base no seu salário. Por lei, você pode comprometer até 30% do seu salário com prestações de empréstimos consignados. Nossa equipe fará essa análise para oferecer o melhor valor possível dentro da sua capacidade de pagamento.',
+    a: 'O valor máximo que você pode solicitar depende da sua margem consignável, que é calculada com base no seu salário. Por lei, você pode comprometer até 30% do seu salário com prestações de empréstimos. Nossa equipe fará essa análise para oferecer o melhor valor possível dentro da sua capacidade de pagamento.',
   },
 ]
 

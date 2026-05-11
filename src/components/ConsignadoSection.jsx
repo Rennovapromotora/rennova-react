@@ -43,12 +43,12 @@ export default function ConsignadoSection() {
             <span className="consig-badge">Entenda</span>
 
             <h2 className="consig-title">
-              O consignado feito sob medida para você,{' '}
+              O crédito feito sob medida para você, {' '}
               <span className="consig-title-highlight">trabalhador CLT</span>
             </h2>
 
             <p className="consig-desc">
-              Desenvolvemos o <strong>melhor crédito consignado</strong> para atender
+              Desenvolvemos o <strong>melhor crédito </strong> para atender
               as necessidades financeiras dos trabalhadores com{' '}
               <strong>carteira assinada</strong> de todo o Brasil, com{' '}
               <strong>condições especiais e aprovação facilitada</strong>.

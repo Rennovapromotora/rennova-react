@@ -35,7 +35,7 @@ export default function App() {
         <Hero />
         <StatsSection />
         <VantagensSection />
-        <ServicesCarousel />
+        {/* <ServicesCarousel /> */}
         {/* <RequisitosFGTS /> */}
         {/* <HowItWorks /> */}
         <Benefits />

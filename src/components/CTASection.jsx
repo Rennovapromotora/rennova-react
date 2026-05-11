@@ -33,10 +33,10 @@ export default function CTASection() {
           Pronto para começar?
         </div>
         <h2 className="cta-title">
-          Faça uma simulação hojes
+          Faça uma simulação hoje
         </h2>
         <p className="cta-desc">
-          Descubra como é fácil obter crédito consignado com a Rennova. Sem burocracia, totalmente digital e com as melhores condições do mercado.
+          Descubra como é fácil obter crédito com a Rennova. Sem burocracia, totalmente digital e com as melhores condições do mercado.
         </p>
         <div className="cta-actions">
           <a href={waLink(WA_MESSAGES.simularWhatsApp)} className="btn-ghost" target="_blank" rel="noreferrer">

@@ -11,7 +11,7 @@ const WA_STROKE_1 = 'M12 .5a11.5 11.5 0 0 0-9.54 17.92L.5 23.5l5.23-1.87A11.5 11
 const WA_STROKE_2 = 'M9.5 14.5c1.3 1.3 4.17 3 5.5 3a2.53 2.53 0 0 0 2.5-2v-1s-1.23-.6-2-1-2 1-2 1A6.52 6.52 0 0 1 11 13a6.52 6.52 0 0 1-1.5-2.5s1.4-1.23 1-2-1-2-1-2h-1a2.53 2.53 0 0 0-2 2.5c0 1.33 1.7 4.2 3 5.5Z'
 
 const navLinks = [
-  { label: 'Serviços', target: 'servicos' },
+  { label: 'Início', target: 'hero' },
   { label: 'Como Funciona', target: 'trust' },
   { label: 'Sobre Nós', target: 'beneficios' },
   { label: 'Fale Conosco', target: 'cta' },

@@ -38,7 +38,7 @@ const timelineItems = [
     iconColor: '#e09d00',
     title: 'Negativado? Sem problema!',
     highlight: 'Sem consulta ao SPC/SERASA',
-    text: 'No crédito consignado a garantia é o desconto direto no benefício — o seu histórico não é barreira.',
+    text: 'Neste crédito a garantia é o desconto direto no benefício — o seu histórico não é barreira.',
     bullets: [
       'Aprovação independente de restrição',
       'Sem análise de crédito tradicional',
@@ -131,7 +131,7 @@ export default function Benefits() {
           <div className="benefits-big-num">+7</div>
           <p className="benefits-stat-label">anos de mercado</p>
           <p className="benefits-stat-desc">
-            Empresa de antecipação de FGTS e crédito consignado há mais de 7 anos no mercado.
+            Empresa de antecipação de FGTS e crédito há mais de 7 anos no mercado.
             Especialistas em consultoria financeira com atendimento de qualidade, transparência e credibilidade.
           </p>
           <div className="benefits-stat-badges">

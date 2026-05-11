@@ -18,6 +18,7 @@ export default function Footer() {
             <p className="footer-about">
               A Rennova Promotora não é uma instituição financeira e não realiza operações de crédito diretamente.
             </p>
+
             <a
               href={waLink(WA_MESSAGES.simularNavbar)}
               className="btn-primary"
@@ -51,7 +52,7 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Serviços</h4>
             <ul>
-              <li><a href="#servicos">Consignado CLT</a></li>
+              <li><a href="#servicos">Crédito CLT</a></li>
               <li><a href="#servicos">Antecipação FGTS</a></li>
             </ul>
           </div>
